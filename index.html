@@ -897,7 +897,7 @@ function renderGroupes() {
       <table class="standings-table">
         <thead>
           <tr>
-            <th>#</th><th>Équipe</th><th>J</th><th>G</th><th>N</th><th>D</th><th>Buts</th><th>Pts</th>
+            <th>#</th><th>Équipe</th><th>FIFA</th><th>J</th><th>G</th><th>N</th><th>D</th><th>Buts</th><th>Pts</th>
           </tr>
         </thead>
         <tbody>
@@ -912,6 +912,7 @@ function renderGroupes() {
             <tr class="${rowClass}">
               <td class="pos-num">${i+1}</td>
               <td><div class="team-cell"><span class="team-cell-flag">${t.flag}</span><span class="team-cell-name">${t.name}</span></div></td>
+              <td>${t.fifaRank ? `#${t.fifaRank}` : '—'}</td>
               <td>${t.j}</td><td>${t.g}</td><td>${t.n}</td><td>${t.d}</td>
               <td>${t.j > 0 ? `${t.bp}:${t.bc}` : '—'}</td>
               <td class="pts-cell">${t.pts}</td>
@@ -959,53 +960,59 @@ function renderBracket() {
     </div>`;
   }
 
-  const r16Left  = b.r16.slice(0, 8);
-  const r16Right = b.r16.slice(8, 16);
-  const qfLeft   = b.qf.slice(0, 4);
-  const qfRight  = b.qf.slice(4, 8);
+  const r32Left  = b.r16.slice(0, 8);
+  const r32Right = b.r16.slice(8, 16);
+  const r16Left  = b.qf.slice(0, 4);
+  const r16Right = b.qf.slice(4, 8);
+  const qfLeft   = b.sf.slice(0, 2);
+  const qfRight  = b.sf.slice(2, 4);
+  const semiLeft = (b.semis || []).slice(0, 1);
+  const semiRight = (b.semis || []).slice(1, 2);
 
   const html = `
   <div class="card">
     <div class="card-header">
-      <span class="card-label"><i class="ti ti-info-circle" style="margin-right:4px"></i>Bleu = chemin France probable</span>
+      <span class="card-label"><i class="ti ti-info-circle" style="margin-right:4px"></i>Bleu = chemin France si 1re du groupe I</span>
     </div>
     <div class="bracket-scroll">
-      <div class="bracket-grid" style="padding:12px 8px;">
+      <div class="bracket-grid" style="padding:12px 8px;min-width:980px;">
         <div class="bracket-col">
           <div class="bracket-col-head">1/16</div>
-          <div class="bracket-col-body">${r16Left.map(m => bMatch(m)).join('')}</div>
+          <div class="bracket-col-body">${r32Left.map(m => bMatch(m)).join('')}</div>
         </div>
         <div class="bracket-col">
           <div class="bracket-col-head">1/8</div>
-          <div class="bracket-col-body">${qfLeft.map(m => bMatch(m)).join('')}</div>
+          <div class="bracket-col-body">${r16Left.map(m => bMatch(m)).join('')}</div>
         </div>
         <div class="bracket-col">
           <div class="bracket-col-head">1/4</div>
-          <div class="bracket-col-body">
-            ${bMatch(b.sf[0])}
-            ${bMatch(null)}
-          </div>
+          <div class="bracket-col-body">${qfLeft.map(m => bMatch(m)).join('')}</div>
         </div>
         <div class="bracket-col">
           <div class="bracket-col-head">1/2</div>
+          <div class="bracket-col-body">${semiLeft.map(m => bMatch(m)).join('')}</div>
+        </div>
+        <div class="bracket-col">
+          <div class="bracket-col-head">Finale</div>
           <div class="bracket-col-body" style="justify-content:center;">
             ${bMatch(b.final)}
           </div>
         </div>
         <div class="bracket-col">
-          <div class="bracket-col-head">1/4</div>
-          <div class="bracket-col-body">
-            ${bMatch(b.sf[1])}
-            ${bMatch(null)}
-          </div>
+          <div class="bracket-col-head">1/2</div>
+          <div class="bracket-col-body">${semiRight.map(m => bMatch(m)).join('')}</div>
         </div>
         <div class="bracket-col">
-          <div class="bracket-col-head">1/8</div>
+          <div class="bracket-col-head">1/4</div>
           <div class="bracket-col-body">${qfRight.map(m => bMatch(m)).join('')}</div>
         </div>
         <div class="bracket-col">
-          <div class="bracket-col-head">1/16</div>
+          <div class="bracket-col-head">1/8</div>
           <div class="bracket-col-body">${r16Right.map(m => bMatch(m)).join('')}</div>
+        </div>
+        <div class="bracket-col">
+          <div class="bracket-col-head">1/16</div>
+          <div class="bracket-col-body">${r32Right.map(m => bMatch(m)).join('')}</div>
         </div>
       </div>
     </div>
@@ -1017,6 +1024,7 @@ function renderBracket() {
 
   document.getElementById('bracketContent').innerHTML = html;
 }
+
 
 /* ══════════════════════════════════════════════════════
    RENDER: LAST UPDATE

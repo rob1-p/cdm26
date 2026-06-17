@@ -1,383 +1,1606 @@
 // ============================================================
 //  FICHIER DE DONNÉES — SEUL FICHIER À MODIFIER
-//  Modifie uniquement ce fichier après chaque match.
-//  L'interface se met à jour automatiquement.
+//  Données réalignées au 17 juin 2026.
 // ============================================================
 
 const DATA = {
-
-  // ── META ──────────────────────────────────────────────────
-  meta: {
-    lastUpdate: "17 juin 2026 – 09h00 · Après France 3-1 Sénégal",
-    currentPhase: "groupes", // "groupes" | "16" | "8" | "quarts" | "demies" | "finale"
-    focusTeam: "France",
+  "meta": {
+    "lastUpdate": "17 juin 2026 – 11h30 · Groupes et bracket réalignés après Autriche 3-1 Jordanie",
+    "currentPhase": "groupes",
+    "focusTeam": "France",
+    "dataNotice": "Données résultats/calendrier alignées sur le calendrier FIFA 2026 disponible au 17 juin 2026. Classement FIFA : dernière publication officielle FIFA du 11 juin 2026 ; rangs complets ajoutés comme métadonnées lorsque disponibles/vérifiés."
   },
-
-  // ── GROUPES ───────────────────────────────────────────────
-  // Liste des 12 groupes. Pour chaque équipe: pts/j/g/n/d/bp/bc
-  // qualified: null | "1er" | "2e" | "3e" | "eliminé"
-  groups: {
-    A: {
-      teams: [
-        { name: "Mexique",       flag: "🇲🇽", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Afrique du Sud",flag: "🇿🇦", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Corée du Sud",  flag: "🇰🇷", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Barragiste D",  flag: "🏳️",  pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+  "groups": {
+    "A": {
+      "teams": [
+        {
+          "name": "Mexique",
+          "flag": "🇲🇽",
+          "fifaRank": 16,
+          "pts": 3,
+          "j": 1,
+          "g": 1,
+          "n": 0,
+          "d": 0,
+          "bp": 2,
+          "bc": 0,
+          "qualified": null
+        },
+        {
+          "name": "Afrique du Sud",
+          "flag": "🇿🇦",
+          "fifaRank": 62,
+          "pts": 0,
+          "j": 1,
+          "g": 0,
+          "n": 0,
+          "d": 1,
+          "bp": 0,
+          "bc": 2,
+          "qualified": null
+        },
+        {
+          "name": "Corée du Sud",
+          "flag": "🇰🇷",
+          "fifaRank": 33,
+          "pts": 3,
+          "j": 1,
+          "g": 1,
+          "n": 0,
+          "d": 0,
+          "bp": 2,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Tchéquie",
+          "flag": "🇨🇿",
+          "fifaRank": 89,
+          "pts": 0,
+          "j": 1,
+          "g": 0,
+          "n": 0,
+          "d": 1,
+          "bp": 1,
+          "bc": 2,
+          "qualified": null
+        }
       ]
     },
-    B: {
-      teams: [
-        { name: "Canada",    flag: "🇨🇦", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Suisse",    flag: "🇨🇭", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Qatar",     flag: "🇶🇦", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Barragiste A", flag: "🏳️", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+    "B": {
+      "teams": [
+        {
+          "name": "Canada",
+          "flag": "🇨🇦",
+          "fifaRank": 30,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 1,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Bosnie-Herzégovine",
+          "flag": "🇧🇦",
+          "fifaRank": 71,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 1,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Qatar",
+          "flag": "🇶🇦",
+          "fifaRank": 55,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 1,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Suisse",
+          "flag": "🇨🇭",
+          "fifaRank": 15,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 1,
+          "bc": 1,
+          "qualified": null
+        }
       ]
     },
-    C: {
-      teams: [
-        { name: "Brésil",  flag: "🇧🇷", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Maroc",   flag: "🇲🇦", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Haïti",   flag: "🇭🇹", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Écosse",  flag: "🏴󠁧󠁢󠁳󠁣󠁴󠁿", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+    "C": {
+      "teams": [
+        {
+          "name": "Brésil",
+          "flag": "🇧🇷",
+          "fifaRank": 6,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 1,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Maroc",
+          "flag": "🇲🇦",
+          "fifaRank": 7,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 1,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Haïti",
+          "flag": "🇭🇹",
+          "fifaRank": 83,
+          "pts": 0,
+          "j": 1,
+          "g": 0,
+          "n": 0,
+          "d": 1,
+          "bp": 0,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Écosse",
+          "flag": "🏴",
+          "fifaRank": 73,
+          "pts": 3,
+          "j": 1,
+          "g": 1,
+          "n": 0,
+          "d": 0,
+          "bp": 1,
+          "bc": 0,
+          "qualified": null
+        }
       ]
     },
-    D: {
-      teams: [
-        { name: "États-Unis",  flag: "🇺🇸", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Paraguay",    flag: "🇵🇾", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Australie",   flag: "🇦🇺", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Barragiste C",flag: "🏳️",  pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+    "D": {
+      "teams": [
+        {
+          "name": "États-Unis",
+          "flag": "🇺🇸",
+          "fifaRank": 14,
+          "pts": 3,
+          "j": 1,
+          "g": 1,
+          "n": 0,
+          "d": 0,
+          "bp": 4,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Paraguay",
+          "flag": "🇵🇾",
+          "fifaRank": 60,
+          "pts": 0,
+          "j": 1,
+          "g": 0,
+          "n": 0,
+          "d": 1,
+          "bp": 1,
+          "bc": 4,
+          "qualified": null
+        },
+        {
+          "name": "Australie",
+          "flag": "🇦🇺",
+          "fifaRank": 24,
+          "pts": 3,
+          "j": 1,
+          "g": 1,
+          "n": 0,
+          "d": 0,
+          "bp": 2,
+          "bc": 0,
+          "qualified": null
+        },
+        {
+          "name": "Turquie",
+          "flag": "🇹🇷",
+          "fifaRank": 85,
+          "pts": 0,
+          "j": 1,
+          "g": 0,
+          "n": 0,
+          "d": 1,
+          "bp": 0,
+          "bc": 2,
+          "qualified": null
+        }
       ]
     },
-    E: {
-      teams: [
-        { name: "Allemagne",     flag: "🇩🇪", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Côte d'Ivoire", flag: "🇨🇮", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Équateur",      flag: "🇪🇨", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Curaçao",       flag: "🇨🇼", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+    "E": {
+      "teams": [
+        {
+          "name": "Allemagne",
+          "flag": "🇩🇪",
+          "fifaRank": 8,
+          "pts": 3,
+          "j": 1,
+          "g": 1,
+          "n": 0,
+          "d": 0,
+          "bp": 7,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Curaçao",
+          "flag": "🇨🇼",
+          "fifaRank": 86,
+          "pts": 0,
+          "j": 1,
+          "g": 0,
+          "n": 0,
+          "d": 1,
+          "bp": 1,
+          "bc": 7,
+          "qualified": null
+        },
+        {
+          "name": "Côte d'Ivoire",
+          "flag": "🇨🇮",
+          "fifaRank": 25,
+          "pts": 3,
+          "j": 1,
+          "g": 1,
+          "n": 0,
+          "d": 0,
+          "bp": 1,
+          "bc": 0,
+          "qualified": null
+        },
+        {
+          "name": "Équateur",
+          "flag": "🇪🇨",
+          "fifaRank": 22,
+          "pts": 0,
+          "j": 1,
+          "g": 0,
+          "n": 0,
+          "d": 1,
+          "bp": 0,
+          "bc": 1,
+          "qualified": null
+        }
       ]
     },
-    F: {
-      teams: [
-        { name: "Pays-Bas", flag: "🇳🇱", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Japon",    flag: "🇯🇵", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Tunisie",  flag: "🇹🇳", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Barragiste B", flag: "🏳️", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+    "F": {
+      "teams": [
+        {
+          "name": "Pays-Bas",
+          "flag": "🇳🇱",
+          "fifaRank": 9,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 2,
+          "bc": 2,
+          "qualified": null
+        },
+        {
+          "name": "Japon",
+          "flag": "🇯🇵",
+          "fifaRank": 18,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 2,
+          "bc": 2,
+          "qualified": null
+        },
+        {
+          "name": "Suède",
+          "flag": "🇸🇪",
+          "fifaRank": 21,
+          "pts": 3,
+          "j": 1,
+          "g": 1,
+          "n": 0,
+          "d": 0,
+          "bp": 5,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Tunisie",
+          "flag": "🇹🇳",
+          "fifaRank": 70,
+          "pts": 0,
+          "j": 1,
+          "g": 0,
+          "n": 0,
+          "d": 1,
+          "bp": 1,
+          "bc": 5,
+          "qualified": null
+        }
       ]
     },
-    G: {
-      teams: [
-        { name: "Espagne",    flag: "🇪🇸", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Arabie S.",  flag: "🇸🇦", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Chili",      flag: "🇨🇱", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Serbie",     flag: "🇷🇸", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+    "G": {
+      "teams": [
+        {
+          "name": "Belgique",
+          "flag": "🇧🇪",
+          "fifaRank": 10,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 1,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Égypte",
+          "flag": "🇪🇬",
+          "fifaRank": 32,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 1,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "IR Iran",
+          "flag": "🇮🇷",
+          "fifaRank": 20,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 2,
+          "bc": 2,
+          "qualified": null
+        },
+        {
+          "name": "Nouvelle-Zélande",
+          "flag": "🇳🇿",
+          "fifaRank": 75,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 2,
+          "bc": 2,
+          "qualified": null
+        }
       ]
     },
-    H: {
-      teams: [
-        { name: "Portugal",  flag: "🇵🇹", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Pologne",   flag: "🇵🇱", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Bolivie",   flag: "🇧🇴", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Cameroun",  flag: "🇨🇲", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+    "H": {
+      "teams": [
+        {
+          "name": "Espagne",
+          "flag": "🇪🇸",
+          "fifaRank": 2,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 0,
+          "bc": 0,
+          "qualified": null
+        },
+        {
+          "name": "Cap-Vert",
+          "flag": "🇨🇻",
+          "fifaRank": 72,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 0,
+          "bc": 0,
+          "qualified": null
+        },
+        {
+          "name": "Arabie S.",
+          "flag": "🇸🇦",
+          "fifaRank": 58,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 1,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Uruguay",
+          "flag": "🇺🇾",
+          "fifaRank": 12,
+          "pts": 1,
+          "j": 1,
+          "g": 0,
+          "n": 1,
+          "d": 0,
+          "bp": 1,
+          "bc": 1,
+          "qualified": null
+        }
       ]
     },
-    I: {
-      // ← GROUPE FRANCE — Mise à jour prioritaire après chaque match
-      teams: [
-        { name: "France",   flag: "🇫🇷", pts:3, j:1, g:1, n:0, d:0, bp:3, bc:1, qualified: null },
-        { name: "Norvège",  flag: "🇳🇴", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Sénégal",  flag: "🇸🇳", pts:0, j:1, g:0, n:0, d:1, bp:1, bc:3, qualified: null },
-        { name: "Irak",     flag: "🇮🇶", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+    "I": {
+      "teams": [
+        {
+          "name": "France",
+          "flag": "🇫🇷",
+          "fifaRank": 3,
+          "pts": 3,
+          "j": 1,
+          "g": 1,
+          "n": 0,
+          "d": 0,
+          "bp": 3,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Sénégal",
+          "flag": "🇸🇳",
+          "fifaRank": 19,
+          "pts": 0,
+          "j": 1,
+          "g": 0,
+          "n": 0,
+          "d": 1,
+          "bp": 1,
+          "bc": 3,
+          "qualified": null
+        },
+        {
+          "name": "Irak",
+          "flag": "🇮🇶",
+          "fifaRank": 68,
+          "pts": 0,
+          "j": 1,
+          "g": 0,
+          "n": 0,
+          "d": 1,
+          "bp": 1,
+          "bc": 4,
+          "qualified": null
+        },
+        {
+          "name": "Norvège",
+          "flag": "🇳🇴",
+          "fifaRank": 23,
+          "pts": 3,
+          "j": 1,
+          "g": 1,
+          "n": 0,
+          "d": 0,
+          "bp": 4,
+          "bc": 1,
+          "qualified": null
+        }
       ]
     },
-    J: {
-      teams: [
-        { name: "Argentine",  flag: "🇦🇷", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Algérie",    flag: "🇩🇿", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Autriche",   flag: "🇦🇹", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Jordanie",   flag: "🇯🇴", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+    "J": {
+      "teams": [
+        {
+          "name": "Argentine",
+          "flag": "🇦🇷",
+          "fifaRank": 1,
+          "pts": 3,
+          "j": 1,
+          "g": 1,
+          "n": 0,
+          "d": 0,
+          "bp": 3,
+          "bc": 0,
+          "qualified": null
+        },
+        {
+          "name": "Algérie",
+          "flag": "🇩🇿",
+          "fifaRank": 78,
+          "pts": 0,
+          "j": 1,
+          "g": 0,
+          "n": 0,
+          "d": 1,
+          "bp": 0,
+          "bc": 3,
+          "qualified": null
+        },
+        {
+          "name": "Autriche",
+          "flag": "🇦🇹",
+          "fifaRank": 17,
+          "pts": 3,
+          "j": 1,
+          "g": 1,
+          "n": 0,
+          "d": 0,
+          "bp": 3,
+          "bc": 1,
+          "qualified": null
+        },
+        {
+          "name": "Jordanie",
+          "flag": "🇯🇴",
+          "fifaRank": 81,
+          "pts": 0,
+          "j": 1,
+          "g": 0,
+          "n": 0,
+          "d": 1,
+          "bp": 1,
+          "bc": 3,
+          "qualified": null
+        }
       ]
     },
-    K: {
-      teams: [
-        { name: "Portugal",   flag: "🇵🇹", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Colombie",   flag: "🇨🇴", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "RD Congo",   flag: "🇨🇩", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Ouzbékistan",flag: "🇺🇿", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+    "K": {
+      "teams": [
+        {
+          "name": "Portugal",
+          "flag": "🇵🇹",
+          "fifaRank": 5,
+          "pts": 0,
+          "j": 0,
+          "g": 0,
+          "n": 0,
+          "d": 0,
+          "bp": 0,
+          "bc": 0,
+          "qualified": null
+        },
+        {
+          "name": "RD Congo",
+          "flag": "🇨🇩",
+          "fifaRank": 88,
+          "pts": 0,
+          "j": 0,
+          "g": 0,
+          "n": 0,
+          "d": 0,
+          "bp": 0,
+          "bc": 0,
+          "qualified": null
+        },
+        {
+          "name": "Ouzbékistan",
+          "flag": "🇺🇿",
+          "fifaRank": 80,
+          "pts": 0,
+          "j": 0,
+          "g": 0,
+          "n": 0,
+          "d": 0,
+          "bp": 0,
+          "bc": 0,
+          "qualified": null
+        },
+        {
+          "name": "Colombie",
+          "flag": "🇨🇴",
+          "fifaRank": 13,
+          "pts": 0,
+          "j": 0,
+          "g": 0,
+          "n": 0,
+          "d": 0,
+          "bp": 0,
+          "bc": 0,
+          "qualified": null
+        }
       ]
     },
-    L: {
-      teams: [
-        { name: "Angleterre", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Sénégal",    flag: "🇸🇳", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "IR Iran",    flag: "🇮🇷", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Barragiste", flag: "🏳️",  pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+    "L": {
+      "teams": [
+        {
+          "name": "Angleterre",
+          "flag": "🏴",
+          "fifaRank": 4,
+          "pts": 0,
+          "j": 0,
+          "g": 0,
+          "n": 0,
+          "d": 0,
+          "bp": 0,
+          "bc": 0,
+          "qualified": null
+        },
+        {
+          "name": "Croatie",
+          "flag": "🇭🇷",
+          "fifaRank": 11,
+          "pts": 0,
+          "j": 0,
+          "g": 0,
+          "n": 0,
+          "d": 0,
+          "bp": 0,
+          "bc": 0,
+          "qualified": null
+        },
+        {
+          "name": "Ghana",
+          "flag": "🇬🇭",
+          "fifaRank": 76,
+          "pts": 0,
+          "j": 0,
+          "g": 0,
+          "n": 0,
+          "d": 0,
+          "bp": 0,
+          "bc": 0,
+          "qualified": null
+        },
+        {
+          "name": "Panama",
+          "flag": "🇵🇦",
+          "fifaRank": 87,
+          "pts": 0,
+          "j": 0,
+          "g": 0,
+          "n": 0,
+          "d": 0,
+          "bp": 0,
+          "bc": 0,
+          "qualified": null
+        }
       ]
-    },
+    }
   },
-
-  // ── MATCHS ÉQUIPE DE FRANCE ────────────────────────────────
-  // status: "upcoming" | "live" | "done"
-  // scorers: [{ name, min, type: "goal"|"penalty"|"og" }]
-  francMatches: [
+  "francMatches": [
     {
-      id: "I-J1",
-      status: "done",
-      date: "16 juin 2026",
-      time: "21h00",
-      venue: "MetLife Stadium",
-      city: "New York",
-      round: "Poule I – J1",
-      home: { name: "France", flag: "🇫🇷" },
-      away: { name: "Sénégal", flag: "🇸🇳" },
-      score: { home: 3, away: 1 },
-      scorers: {
-        home: [
-          { name: "Mbappé", min: 66, type: "goal" },
-          { name: "Barcola", min: 82, type: "goal" },
-          { name: "Mbappé", min: 90+6, type: "goal" },
+      "id": "I-J1",
+      "status": "done",
+      "date": "16 juin 2026",
+      "time": "21h00",
+      "venue": "MetLife Stadium",
+      "city": "New York / New Jersey",
+      "round": "Poule I – J1",
+      "home": {
+        "name": "France",
+        "flag": "🇫🇷"
+      },
+      "away": {
+        "name": "Sénégal",
+        "flag": "🇸🇳"
+      },
+      "score": {
+        "home": 3,
+        "away": 1
+      },
+      "scorers": {
+        "home": [
+          {
+            "name": "Mbappé",
+            "min": 66,
+            "type": "goal"
+          },
+          {
+            "name": "Barcola",
+            "min": 82,
+            "type": "goal"
+          },
+          {
+            "name": "Mbappé",
+            "min": "90+6",
+            "type": "goal"
+          }
         ],
-        away: [
-          { name: "I. Mbaye", min: 90+5, type: "goal" },
+        "away": [
+          {
+            "name": "I. Mbaye",
+            "min": "90+5",
+            "type": "goal"
+          }
         ]
       },
-      analysis: {
-        preview: "Premier match de poule face au Sénégal, équipe africaine la plus dangereuse du tournoi. Les Lions disposent de Sadio Mané en fin de carrière mais toujours influent, et d'une défense organisée (Koulibaly). La France est favorite à 66% mais le Sénégal a l'habitude des surprises : ils avaient battu les Bleus 1-0 en 2002. Deschamps devrait aligner un 4-3-3 avec Mbappé pointe, Dembelé et Griezmann sur les ailes. L'enjeu : ne pas concéder sur coup de pied arrêté (Koulibaly, 1m90).",
-        keyDuel: "Mbappé vs Koulibaly — duel de titans entre le meilleur attaquant français et le patron défensif sénégalais.",
-        winProbability: { home: 66, draw: 19, away: 15 },
-        keyStats: [
-          { label: "Classement FIFA", home: "#3", away: "#19" },
-          { label: "Buts marqués (qualifs)", home: "28", away: "21" },
-          { label: "Buteur clé", home: "Mbappé (12 buts)", away: "Mané (8 buts)" },
+      "analysis": {
+        "preview": "Entrée en lice de la France face au Sénégal dans un groupe I relevé. Le contexte historique restait fort après la défaite française de 2002, mais les Bleus abordaient ce match avec un statut de favori, une attaque très dense et l'obligation de bien lancer leur tournoi.",
+        "keyDuel": "Mbappé vs Koulibaly — vitesse, appels profonds et gestion des duels dans la surface.",
+        "winProbability": {
+          "home": 66,
+          "draw": 19,
+          "away": 15
+        },
+        "keyStats": [
+          {
+            "label": "Classement FIFA",
+            "home": "#3",
+            "away": "#19"
+          },
+          {
+            "label": "Forme du match",
+            "home": "3 buts en 2e période",
+            "away": "réduction à 90+5"
+          },
+          {
+            "label": "Buteur clé",
+            "home": "Mbappé x2",
+            "away": "I. Mbaye"
+          }
         ],
-        postMatch: "Victoire 3-1 des Bleus, laborieuse en première période mais maîtrisée en seconde. La France a souffert et a frôlé le désastre sur un poteau de Nicolas Jackson (25e) sauvé par Maignan. Mbappé a débloqué la situation à la 66e sur assist d'Olise, puis Barcola a doublé la mise (82e, assist Rabiot). Le Sénégal a réduit le score en toute fin (90e+5, Mbaye) avant que Mbappé ne scelle le score d'une frappe de 25 mètres (90e+6). 🏆 Record historique : avec ce doublé, Kylian Mbappé devient à 58 buts le meilleur buteur de l'histoire de l'équipe de France, dépassant Olivier Giroud. Point noir : 6e match consécutif sans clean sheet.",
+        "postMatch": "Victoire 3-1 des Bleus. Après une première période tendue, la France a accéléré en seconde période : Mbappé ouvre le score à la 66e, Barcola double la mise à la 82e, puis Mbappé scelle le match à 90+6 après la réduction sénégalaise à 90+5. Avec ce doublé, Mbappé atteint 58 buts avec les Bleus et dépasse Olivier Giroud."
       }
     },
     {
-      id: "I-J2",
-      status: "upcoming",
-      date: "22 juin 2026",
-      time: "23h00",
-      venue: "Lincoln Financial Field",
-      city: "Philadelphie",
-      round: "Poule I – J2",
-      home: { name: "France", flag: "🇫🇷" },
-      away: { name: "Irak", flag: "🇮🇶" },
-      score: { home: null, away: null },
-      scorers: { home: [], away: [] },
-      analysis: {
-        preview: "Adversaire a priori le plus abordable du groupe. L'Irak s'est qualifié via les barrages asiatiques et n'a pas l'habitude de la scène mondiale depuis 1986. Une victoire large ici permettrait d'aborder le match décisif contre la Norvège avec sérénité. Attention à la rotation excessive : Deschamps doit gérer son effectif sur 3 matchs en 10 jours.",
-        keyDuel: "Tchouaméni vs le milieu irakien — domination attendue au milieu de terrain.",
-        winProbability: { home: 87, draw: 9, away: 4 },
-        keyStats: [
-          { label: "Classement FIFA", home: "#3", away: "#68" },
-          { label: "Participations CM", home: "16", away: "2" },
-          { label: "Enjeu", home: "Qualification quasi-assurée", away: "Exploit historique" },
+      "id": "I-J2",
+      "status": "upcoming",
+      "date": "22 juin 2026",
+      "time": "23h00",
+      "venue": "Lincoln Financial Field",
+      "city": "Philadelphie",
+      "round": "Poule I – J2",
+      "home": {
+        "name": "France",
+        "flag": "🇫🇷"
+      },
+      "away": {
+        "name": "Irak",
+        "flag": "🇮🇶"
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "scorers": {
+        "home": [],
+        "away": []
+      },
+      "analysis": {
+        "preview": "Deuxième match de groupe pour la France. L'Irak reste l'équipe la moins bien classée du groupe I, mais son premier match contre la Norvège a montré une capacité à presser, à se projeter vite et à créer de vrais temps forts malgré la défaite 4-1.",
+        "keyDuel": "Tchouaméni / Rabiot vs le milieu irakien — sécuriser les transitions et éviter un match ouvert.",
+        "winProbability": {
+          "home": 82,
+          "draw": 12,
+          "away": 6
+        },
+        "keyStats": [
+          {
+            "label": "Classement FIFA",
+            "home": "#3",
+            "away": "#68"
+          },
+          {
+            "label": "J1",
+            "home": "France 3-1 Sénégal",
+            "away": "Irak 1-4 Norvège"
+          },
+          {
+            "label": "Enjeu",
+            "home": "prendre option qualification",
+            "away": "rester en vie"
+          }
         ],
-        postMatch: null,
+        "postMatch": null
       }
     },
     {
-      id: "I-J3",
-      status: "upcoming",
-      date: "26 juin 2026",
-      time: "21h00",
-      venue: "Gillette Stadium",
-      city: "Boston",
-      round: "Poule I – J3",
-      home: { name: "Norvège", flag: "🇳🇴" },
-      away: { name: "France", flag: "🇫🇷" },
-      score: { home: null, away: null },
-      scorers: { home: [], away: [] },
-      analysis: {
-        preview: "Le match le plus important du groupe. Ce choc détermine qui sera 1er ou 2e — ce qui change radicalement le bracket pour la suite. La Norvège d'Erling Haaland est la 4e nation au classement FIFA. Haaland a inscrit 37 buts en qualification, un record absolu. La France doit gérer ce match avec intelligence : une victoire = 1re place quasi-garantie, un nul peut suffire selon les autres résultats. En cas de défaite, la France peut quand même se qualifier comme 2e ou meilleur 3e.",
-        keyDuel: "Haaland vs Upamecano — le duel à 100M€ : le meilleur avant-centre du monde face au défenseur français le plus physique.",
-        winProbability: { home: 35, draw: 28, away: 37 },
-        keyStats: [
-          { label: "Classement FIFA", home: "#4", away: "#3" },
-          { label: "Buteur clé", home: "Haaland (37 buts qualifs)", away: "Mbappé (12 buts)" },
-          { label: "Enjeu", home: "1re place du groupe", away: "1re place = bracket favorable" },
+      "id": "I-J3",
+      "status": "upcoming",
+      "date": "26 juin 2026",
+      "time": "21h00",
+      "venue": "Gillette Stadium",
+      "city": "Boston",
+      "round": "Poule I – J3",
+      "home": {
+        "name": "Norvège",
+        "flag": "🇳🇴"
+      },
+      "away": {
+        "name": "France",
+        "flag": "🇫🇷"
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "scorers": {
+        "home": [],
+        "away": []
+      },
+      "analysis": {
+        "preview": "Le choc du groupe I. La Norvège a démarré fort contre l'Irak avec un succès 4-1 et un doublé d'Erling Haaland. Ce match peut décider de la première place, donc du chemin en phase à élimination directe.",
+        "keyDuel": "Haaland vs Saliba / Upamecano — maîtrise de la profondeur, du jeu aérien et des secondes balles.",
+        "winProbability": {
+          "home": 32,
+          "draw": 26,
+          "away": 42
+        },
+        "keyStats": [
+          {
+            "label": "Classement FIFA",
+            "home": "#23",
+            "away": "#3"
+          },
+          {
+            "label": "J1",
+            "home": "Norvège 4-1 Irak",
+            "away": "France 3-1 Sénégal"
+          },
+          {
+            "label": "Enjeu",
+            "home": "1re place potentielle",
+            "away": "sécuriser le chemin favorable"
+          }
         ],
-        postMatch: null,
+        "postMatch": null
       }
-    },
+    }
   ],
-
-  // ── PHASE FINALE FRANCE ────────────────────────────────────
-  // Remplir au fur et à mesure. opponent: null si inconnu.
-  knockout: [
+  "knockout": [
     {
-      round: "1/16 de finale",
-      roundShort: "1/16",
-      date: "30 juin 2026",
-      time: "23h00",
-      venue: "MetLife Stadium",
-      city: "New York",
-      scenario: "Si France 1re du groupe I",
-      opponent: null, // ← remplir quand connu: { name: "Maroc", flag: "🇲🇦" }
-      opponentNote: "Meilleur 3e parmi C/D/F/G/H",
-      score: null,
-      scorers: { home: [], away: [] },
-      analysis: "En tant que 1re du groupe, la France affronte un 3e repêché — équipe qui n'a pas réussi à finir dans les 2 premiers de son groupe. Historiquement, les 3es ont rarement créé de grosses surprises au tour suivant quand ils jouent une nation du top 5. Risque élevé uniquement si la France arrive physiquement diminuée.",
-      winProbability: { home: 78, draw: 12, away: 10 },
+      "round": "1/16 de finale",
+      "roundShort": "1/16",
+      "date": "30 juin 2026",
+      "time": "21h00",
+      "venue": "MetLife Stadium",
+      "city": "New York / New Jersey",
+      "scenario": "Si France 1re du groupe I",
+      "opponent": null,
+      "opponentNote": "3e de groupe C/D/F/G/H",
+      "score": null,
+      "scorers": {
+        "home": [],
+        "away": []
+      },
+      "analysis": "Si la France termine 1re du groupe I, elle jouera le match 77 contre un troisième repêché issu des groupes C, D, F, G ou H. Le tirage est favorable sur le papier, mais le niveau du 3e peut varier fortement : Maroc, Japon, Belgique, Uruguay ou une nation surprise peuvent basculer dans cette zone selon les résultats.",
+      "winProbability": {
+        "home": 75,
+        "draw": 14,
+        "away": 11
+      }
     },
     {
-      round: "1/8 de finale",
-      roundShort: "1/8",
-      date: "4 juillet 2026",
-      time: "23h00",
-      venue: "Lincoln Financial Field",
-      city: "Philadelphie",
-      scenario: "Si France 1re du groupe I",
-      opponent: null,
-      opponentNote: "Vainqueur match 73 ou 75 (zone Brésil/Mexique/Maroc)",
-      score: null,
-      scorers: { home: [], away: [] },
-      analysis: "C'est ici que le vrai tournoi commence. Le 1/8 oppose potentiellement la France au Brésil ou aux Pays-Bas selon les résultats des groupes C et F. Un Brésil-France en 1/8 serait l'affiche du tournoi, deux nations qui ne se sont pas affrontées en phase finale depuis 2006. La profondeur du banc français sera déterminante.",
-      winProbability: { home: 55, draw: 20, away: 25 },
+      "round": "1/8 de finale",
+      "roundShort": "1/8",
+      "date": "4 juillet 2026",
+      "time": "23h00",
+      "venue": "Lincoln Financial Field",
+      "city": "Philadelphie",
+      "scenario": "Si France 1re du groupe I",
+      "opponent": null,
+      "opponentNote": "Vainqueur match 74 ou 77",
+      "score": null,
+      "scorers": {
+        "home": [],
+        "away": []
+      },
+      "analysis": "Le vainqueur du match 77 retrouve le vainqueur du match 74 : 1er du groupe E contre un 3e A/B/C/D/F. Si la logique sportive est respectée, l'Allemagne peut se trouver dans cette portion du tableau. C'est donc potentiellement le premier très gros test des Bleus.",
+      "winProbability": {
+        "home": 56,
+        "draw": 20,
+        "away": 24
+      }
     },
     {
-      round: "Quart de finale",
-      roundShort: "1/4",
-      date: "9 juillet 2026",
-      time: "22h00",
-      venue: "Gillette Stadium",
-      city: "Boston",
-      scenario: "Si France 1re du groupe I",
-      opponent: null,
-      opponentNote: "Zone Allemagne/Portugal (groupe E/H)",
-      score: null,
-      scorers: { home: [], away: [] },
-      analysis: "La FIFA a séparé France et Espagne dans des demi-tableaux opposés. Mais l'Allemagne (Groupe E, 1re probable) et le Portugal (Groupe K) peuvent se retrouver dans ce quart. L'Allemagne, portée par un renouveau générationnel (Musiala, Wirtz), est l'adversaire le plus redouté ici. Le Portugal sans Ronaldo mais avec Félix, Bruno et Leão reste dangereux.",
-      winProbability: { home: 52, draw: 22, away: 26 },
+      "round": "Quart de finale",
+      "roundShort": "1/4",
+      "date": "9 juillet 2026",
+      "time": "22h00",
+      "venue": "Gillette Stadium",
+      "city": "Boston",
+      "scenario": "Si France 1re du groupe I",
+      "opponent": null,
+      "opponentNote": "Vainqueur match 89 ou 90",
+      "score": null,
+      "scorers": {
+        "home": [],
+        "away": []
+      },
+      "analysis": "Le quart issu de la partie haute gauche du tableau croise les vainqueurs des matchs 89 et 90. La zone peut faire remonter des équipes issues des groupes A, B, C, E, F et I. Le scénario reste ouvert tant que les meilleurs troisièmes ne sont pas connus.",
+      "winProbability": {
+        "home": 52,
+        "draw": 21,
+        "away": 27
+      }
     },
     {
-      round: "Demi-finale",
-      roundShort: "1/2",
-      date: "14 juillet 2026",
-      time: "21h00",
-      venue: "AT&T Stadium",
-      city: "Dallas",
-      scenario: "Si France 1re du groupe I",
-      opponent: null,
-      opponentNote: "Zone Argentine/Algérie/Autriche (Groupe J)",
-      score: null,
-      scorers: { home: [], away: [] },
-      analysis: "Si la France est 1re de son groupe, elle évite l'Espagne et l'Angleterre jusqu'à la finale (règle FIFA de séparation des têtes de série). La demi la plus probable oppose la France à l'Argentine championne du monde en titre. Un France-Argentine en demi le 14 juillet serait un scénario de rêve, une revanche potentielle de la finale 2022.",
-      winProbability: { home: 50, draw: 18, away: 32 },
+      "round": "Demi-finale",
+      "roundShort": "1/2",
+      "date": "14 juillet 2026",
+      "time": "21h00",
+      "venue": "AT&T Stadium",
+      "city": "Dallas",
+      "scenario": "Si France 1re du groupe I",
+      "opponent": null,
+      "opponentNote": "Vainqueur quart QF1/QF2",
+      "score": null,
+      "scorers": {
+        "home": [],
+        "away": []
+      },
+      "analysis": "En cas de parcours parfait, la demi-finale du 14 juillet à Dallas serait l'affiche majeure du tableau. L'intérêt principal de la 1re place reste d'éviter le maximum de croisements défavorables avant les derniers tours.",
+      "winProbability": {
+        "home": 49,
+        "draw": 19,
+        "away": 32
+      }
     },
     {
-      round: "Finale",
-      roundShort: "Finale",
-      date: "19 juillet 2026",
-      time: "21h00",
-      venue: "MetLife Stadium",
-      city: "New York",
-      scenario: null,
-      opponent: null,
-      opponentNote: "Vainqueur de l'autre demi-tableau (Espagne ou Angleterre probables)",
-      score: null,
-      scorers: { home: [], away: [] },
-      analysis: "La finale revient là où tout a commencé — le MetLife Stadium de New York. L'Espagne, tenante du titre européen, ou l'Angleterre qui n'a jamais gagné de Coupe du Monde depuis 1966. La France est 3e nation au classement FIFA, favorie avec l'Espagne et l'Argentine. Une 3e étoile serait le plus grand accomplissement de l'histoire du football français.",
-      winProbability: { home: 48, draw: 16, away: 36 },
-    },
+      "round": "Finale",
+      "roundShort": "Finale",
+      "date": "19 juillet 2026",
+      "time": "21h00",
+      "venue": "MetLife Stadium",
+      "city": "New York / New Jersey",
+      "scenario": null,
+      "opponent": null,
+      "opponentNote": "Vainqueur de l'autre demi-finale",
+      "score": null,
+      "scorers": {
+        "home": [],
+        "away": []
+      },
+      "analysis": "La finale se joue à New York / New Jersey. Pour la France, l'objectif reste une troisième étoile. Le niveau de difficulté dépendra surtout du classement final dans le groupe I et de la composition des huit meilleurs troisièmes.",
+      "winProbability": {
+        "home": 48,
+        "draw": 16,
+        "away": 36
+      }
+    }
   ],
-
-  // ── FOCUS FRANCE — STATS GLOBALES ─────────────────────────
-  franceFocus: {
-    formation: "4-2-3-1",
-    coach: "Didier Deschamps",
-    fifaRank: 1,
-    // Joueurs clés avec stats — mettre à jour après chaque match
-    keyPlayers: [
-      { name: "Kylian Mbappé",       flag: "⚽", position: "ATT", goals: 2, assists: 0, note: "Capitaine, meilleur buteur de l'histoire des Bleus (58 buts). Doublé contre le Sénégal dont une frappe de 25m en toute fin. Record historique absolu." },
-      { name: "Ousmane Dembélé",     flag: "🌀", position: "ATT", goals: 0, assists: 0, note: "Lauréat du prix The Best FIFA 2025. Ailier titulaire en pointe gauche, dribbleur dévastateur, remplacé à la 80e contre le Sénégal." },
-      { name: "Michael Olise",       flag: "🎯", position: "MIL", goals: 0, assists: 2, note: "2 passes décisives contre le Sénégal (assists des deux buts de Mbappé). Phénomène technique, tête de gondole du nouveau visage des Bleus." },
-      { name: "Désiré Doué",         flag: "🌟", position: "MIL", goals: 0, assists: 0, note: "Prodige du PSG, Meilleur jeune de la Coupe du monde des Clubs 2025. Titulaire dans le 4-2-3-1, créativité et impact décisif attendus." },
-      { name: "Aurélien Tchouaméni", flag: "🛡️", position: "MIL", goals: 0, assists: 0, note: "Double pivot avec Rabiot, récupérateur et relanceur, pilier défensif du milieu. Indispensable à l'équilibre de l'équipe." },
-      { name: "Adrien Rabiot",       flag: "💪", position: "MIL", goals: 0, assists: 1, note: "Double pivot, 1 passe décisive contre le Sénégal (assist Barcola). Box-to-box complet, expérience de deux finales mondiales." },
-      { name: "William Saliba",      flag: "🧱", position: "DEF", goals: 0, assists: 0, note: "Défenseur central titulaire, l'un des meilleurs au monde à 25 ans. Taille, vitesse et relance propre." },
-      { name: "Dayot Upamecano",     flag: "🏋️", position: "DEF", goals: 0, assists: 0, note: "Défenseur central, puissant dans les duels aériens, associé à Saliba en charnière." },
-      { name: "Theo Hernández",      flag: "🏃", position: "DEF", goals: 0, assists: 0, note: "Latéral gauche offensif, débordements et centres, l'un des meilleurs à son poste au monde." },
-      { name: "Bradley Barcola",     flag: "⚡", position: "ATT", goals: 1, assists: 0, note: "Entré à la 80e contre le Sénégal, buteur dès sa première action (82e). Super-sub de luxe, rapidité dévastatrice." },
-      { name: "Mike Maignan",        flag: "🧤", position: "GK",  goals: 0, assists: 0, note: "Gardien titulaire, sauveur sur le poteau de Jackson (25e) contre le Sénégal. Relanceur au pied, réflexes au top." },
+  "franceFocus": {
+    "formation": "4-2-3-1",
+    "coach": "Didier Deschamps",
+    "fifaRank": 3,
+    "keyPlayers": [
+      {
+        "name": "Kylian Mbappé",
+        "flag": "⚽",
+        "position": "ATT",
+        "goals": 2,
+        "assists": 0,
+        "note": "Capitaine. Doublé contre le Sénégal, 58 buts en sélection et nouveau meilleur buteur de l'histoire des Bleus."
+      },
+      {
+        "name": "Bradley Barcola",
+        "flag": "⚡",
+        "position": "ATT",
+        "goals": 1,
+        "assists": 0,
+        "note": "Buteur contre le Sénégal après son entrée. Profil de percussion utile lorsque le match s'ouvre."
+      },
+      {
+        "name": "Michael Olise",
+        "flag": "🎯",
+        "position": "MIL",
+        "goals": 0,
+        "assists": 2,
+        "note": "Deux passes décisives contre le Sénégal. Influence majeure entre les lignes et sur les derniers choix."
+      },
+      {
+        "name": "Adrien Rabiot",
+        "flag": "💪",
+        "position": "MIL",
+        "goals": 0,
+        "assists": 1,
+        "note": "Passeur décisif pour Barcola. Volume, projection et équilibre du double pivot."
+      },
+      {
+        "name": "Aurélien Tchouaméni",
+        "flag": "🛡️",
+        "position": "MIL",
+        "goals": 0,
+        "assists": 0,
+        "note": "Point d'ancrage du milieu. Rôle clé pour éviter les transitions adverses."
+      },
+      {
+        "name": "William Saliba",
+        "flag": "🧱",
+        "position": "DEF",
+        "goals": 0,
+        "assists": 0,
+        "note": "Défenseur central majeur. Son duel indirect avec Haaland sera central contre la Norvège."
+      },
+      {
+        "name": "Dayot Upamecano",
+        "flag": "🏋️",
+        "position": "DEF",
+        "goals": 0,
+        "assists": 0,
+        "note": "Puissance dans les duels et couverture de profondeur. Important dans les matchs à haute intensité."
+      },
+      {
+        "name": "Theo Hernández",
+        "flag": "🏃",
+        "position": "DEF",
+        "goals": 0,
+        "assists": 0,
+        "note": "Apport offensif côté gauche, largeur et centres. Attention à l'équilibre défensif."
+      },
+      {
+        "name": "Mike Maignan",
+        "flag": "🧤",
+        "position": "GK",
+        "goals": 0,
+        "assists": 0,
+        "note": "Gardien titulaire. La France a concédé contre le Sénégal, le clean sheet reste un point de vigilance."
+      }
     ],
-    // Buteurs France (mis à jour après chaque match)
-    scorers: [
-      { name: "Kylian Mbappé", goals: 2, penalties: 0 },
-      { name: "Bradley Barcola", goals: 1, penalties: 0 },
+    "scorers": [
+      {
+        "name": "Kylian Mbappé",
+        "goals": 2,
+        "penalties": 0
+      },
+      {
+        "name": "Bradley Barcola",
+        "goals": 1,
+        "penalties": 0
+      }
     ],
-    // Résumé de tournoi
-    tournamentStats: {
-      matchesPlayed: 1,
-      wins: 1,
-      draws: 0,
-      losses: 0,
-      goalsScored: 3,
-      goalsConceded: 1,
+    "tournamentStats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "draws": 0,
+      "losses": 0,
+      "goalsScored": 3,
+      "goalsConceded": 1
     },
-    // Analyse générale des Bleus dans ce tournoi
-    globalAnalysis: "Entrée en lice réussie mais perfectible. Les Bleus ont souffert en 1re période face à un Sénégal organisé et intense, frôlant la catastrophe sur un poteau de Jackson (25e). La 2e période a vu une France plus dominante dans son 4-2-3-1 : Mbappé a débloqué (66e, assist Olise), Barcola super-sub a doublé (82e, assist Rabiot), puis Mbappé a scellé le score d'une frappe de 25m (90e+6, assist Olise). 🏆 Record : 58 buts pour Mbappé, seul meilleur buteur de l'histoire des Bleus. Point noir : 6e match consécutif sans clean sheet. Prochain match contre l'Irak le 22 juin — qualification quasi-assurée en cas de victoire.",
+    "globalAnalysis": "La France a réussi son entrée dans le tournoi avec une victoire 3-1 contre le Sénégal. Le résultat est solide, mais le match rappelle deux axes de vigilance : démarrer plus vite et retrouver une meilleure maîtrise défensive. Le groupe I est déjà très lisible après la J1 : France et Norvège ont gagné, Sénégal et Irak doivent réagir. Le prochain match contre l'Irak peut quasiment verrouiller la qualification avant le choc contre la Norvège."
   },
-
-  // ── BRACKET PHASE FINALE (GÉNÉRAL) ────────────────────────
-  // Remplir au fur et à mesure quand les équipes sont connues
-  // null = à déterminer
-  bracket: {
-    r16: [
-      // match 73
-      { id: "M73", date: "28 juin", team1: { name: "1A", flag: "❓" }, team2: { name: "2B", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 74
-      { id: "M74", date: "29 juin", team1: { name: "1E", flag: "❓" }, team2: { name: "3e ABCDF", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 75
-      { id: "M75", date: "30 juin", team1: { name: "1F", flag: "❓" }, team2: { name: "2C", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 76
-      { id: "M76", date: "29 juin", team1: { name: "1C", flag: "❓" }, team2: { name: "2F", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 77 — FRANCE si 1re du groupe I
-      { id: "M77", date: "30 juin", team1: { name: "1I (France?)", flag: "🇫🇷" }, team2: { name: "3e CDFGH", flag: "❓" }, score1: null, score2: null, winner: null, isFrance: true },
-      // match 78
-      { id: "M78", date: "30 juin", team1: { name: "2E", flag: "❓" }, team2: { name: "2I", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 79
-      { id: "M79", date: "1 juil", team1: { name: "1A", flag: "❓" }, team2: { name: "3e CEFHI", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 80
-      { id: "M80", date: "1 juil", team1: { name: "1L", flag: "❓" }, team2: { name: "3e EHIJK", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 81
-      { id: "M81", date: "2 juil", team1: { name: "1D", flag: "❓" }, team2: { name: "3e BEFIJ", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 82
-      { id: "M82", date: "1 juil", team1: { name: "1G", flag: "❓" }, team2: { name: "3e AEHIJ", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 83
-      { id: "M83", date: "3 juil", team1: { name: "2K", flag: "❓" }, team2: { name: "2L", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 84
-      { id: "M84", date: "2 juil", team1: { name: "1H", flag: "❓" }, team2: { name: "2J", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 85
-      { id: "M85", date: "3 juil", team1: { name: "1B", flag: "❓" }, team2: { name: "3e EFGIJ", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 86
-      { id: "M86", date: "4 juil", team1: { name: "1J", flag: "❓" }, team2: { name: "2H", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 87
-      { id: "M87", date: "4 juil", team1: { name: "1K", flag: "❓" }, team2: { name: "3e DEIJL", flag: "❓" }, score1: null, score2: null, winner: null },
-      // match 88
-      { id: "M88", date: "3 juil", team1: { name: "2D", flag: "❓" }, team2: { name: "2G", flag: "❓" }, score1: null, score2: null, winner: null },
+  "bracket": {
+    "r16": [
+      {
+        "id": "M73",
+        "date": "28 juin",
+        "team1": {
+          "name": "2A",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "2B",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M74",
+        "date": "29 juin",
+        "team1": {
+          "name": "1E",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "3e A/B/C/D/F",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M75",
+        "date": "29 juin",
+        "team1": {
+          "name": "1F",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "2C",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M76",
+        "date": "29 juin",
+        "team1": {
+          "name": "1C",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "2F",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M77",
+        "date": "30 juin",
+        "team1": {
+          "name": "1I (France ?)",
+          "flag": "🇫🇷"
+        },
+        "team2": {
+          "name": "3e C/D/F/G/H",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null,
+        "isFrance": true
+      },
+      {
+        "id": "M78",
+        "date": "30 juin",
+        "team1": {
+          "name": "2E",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "2I",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M79",
+        "date": "30 juin",
+        "team1": {
+          "name": "1A",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "3e C/E/F/H/I",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M80",
+        "date": "1 juil",
+        "team1": {
+          "name": "1L",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "3e E/H/I/J/K",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M81",
+        "date": "1 juil",
+        "team1": {
+          "name": "1D",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "3e B/E/F/I/J",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M82",
+        "date": "1 juil",
+        "team1": {
+          "name": "1G",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "3e A/E/H/I/J",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M83",
+        "date": "2 juil",
+        "team1": {
+          "name": "2K",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "2L",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M84",
+        "date": "2 juil",
+        "team1": {
+          "name": "1H",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "2J",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M85",
+        "date": "2 juil",
+        "team1": {
+          "name": "1B",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "3e E/F/G/I/J",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M86",
+        "date": "3 juil",
+        "team1": {
+          "name": "1J",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "2H",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M87",
+        "date": "3 juil",
+        "team1": {
+          "name": "1K",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "3e D/E/I/J/L",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M88",
+        "date": "3 juil",
+        "team1": {
+          "name": "2D",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "2G",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      }
     ],
-    qf: [
-      { id: "QF1", date: "9 juil",  team1: null, team2: null, score1: null, score2: null, winner: null, fromMatches: ["M73","M75"], isFrance: true },
-      { id: "QF2", date: "10 juil", team1: null, team2: null, score1: null, score2: null, winner: null, fromMatches: ["M74","M77"] },
-      { id: "QF3", date: "11 juil", team1: null, team2: null, score1: null, score2: null, winner: null, fromMatches: ["M76","M78"] },
-      { id: "QF4", date: "12 juil", team1: null, team2: null, score1: null, score2: null, winner: null, fromMatches: ["M79","M80"] },
-      { id: "QF5", date: "9 juil",  team1: null, team2: null, score1: null, score2: null, winner: null, fromMatches: ["M81","M82"] },
-      { id: "QF6", date: "10 juil", team1: null, team2: null, score1: null, score2: null, winner: null, fromMatches: ["M83","M84"] },
-      { id: "QF7", date: "11 juil", team1: null, team2: null, score1: null, score2: null, winner: null, fromMatches: ["M85","M86"] },
-      { id: "QF8", date: "12 juil", team1: null, team2: null, score1: null, score2: null, winner: null, fromMatches: ["M87","M88"] },
+    "qf": [
+      {
+        "id": "M89",
+        "date": "4 juil",
+        "team1": {
+          "name": "V74",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V77",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null,
+        "fromMatches": [
+          "M74",
+          "M77"
+        ],
+        "isFrance": true
+      },
+      {
+        "id": "M90",
+        "date": "4 juil",
+        "team1": {
+          "name": "V73",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V75",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null,
+        "fromMatches": [
+          "M73",
+          "M75"
+        ]
+      },
+      {
+        "id": "M91",
+        "date": "5 juil",
+        "team1": {
+          "name": "V76",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V78",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null,
+        "fromMatches": [
+          "M76",
+          "M78"
+        ]
+      },
+      {
+        "id": "M92",
+        "date": "5 juil",
+        "team1": {
+          "name": "V79",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V80",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null,
+        "fromMatches": [
+          "M79",
+          "M80"
+        ]
+      },
+      {
+        "id": "M93",
+        "date": "6 juil",
+        "team1": {
+          "name": "V83",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V84",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null,
+        "fromMatches": [
+          "M83",
+          "M84"
+        ]
+      },
+      {
+        "id": "M94",
+        "date": "6 juil",
+        "team1": {
+          "name": "V81",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V82",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null,
+        "fromMatches": [
+          "M81",
+          "M82"
+        ]
+      },
+      {
+        "id": "M95",
+        "date": "7 juil",
+        "team1": {
+          "name": "V86",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V88",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null,
+        "fromMatches": [
+          "M86",
+          "M88"
+        ]
+      },
+      {
+        "id": "M96",
+        "date": "7 juil",
+        "team1": {
+          "name": "V85",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V87",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null,
+        "fromMatches": [
+          "M85",
+          "M87"
+        ]
+      }
     ],
-    sf: [
-      { id: "SF1", date: "14 juil", team1: null, team2: null, score1: null, score2: null, winner: null, isFrance: true },
-      { id: "SF2", date: "15 juil", team1: null, team2: null, score1: null, score2: null, winner: null },
+    "sf": [
+      {
+        "id": "M97",
+        "date": "9 juil",
+        "team1": {
+          "name": "V89",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V90",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null,
+        "isFrance": true
+      },
+      {
+        "id": "M98",
+        "date": "10 juil",
+        "team1": {
+          "name": "V93",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V94",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M99",
+        "date": "11 juil",
+        "team1": {
+          "name": "V91",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V92",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      },
+      {
+        "id": "M100",
+        "date": "11 juil",
+        "team1": {
+          "name": "V95",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V96",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      }
     ],
-    final: {
-      id: "FIN", date: "19 juil", team1: null, team2: null, score1: null, score2: null, winner: null, isFrance: true,
+    "semis": [
+      {
+        "id": "M101",
+        "date": "14 juil",
+        "team1": {
+          "name": "V97",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V98",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null,
+        "isFrance": true
+      },
+      {
+        "id": "M102",
+        "date": "15 juil",
+        "team1": {
+          "name": "V99",
+          "flag": "❓"
+        },
+        "team2": {
+          "name": "V100",
+          "flag": "❓"
+        },
+        "score1": null,
+        "score2": null,
+        "winner": null
+      }
+    ],
+    "final": {
+      "id": "FIN",
+      "date": "19 juil",
+      "team1": {
+        "name": "V101",
+        "flag": "❓"
+      },
+      "team2": {
+        "name": "V102",
+        "flag": "❓"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "isFrance": true
     },
-    third: {
-      id: "3RD", date: "18 juil", team1: null, team2: null, score1: null, score2: null, winner: null,
-    },
-  },
-
-}; // fin DATA
+    "third": {
+      "id": "3RD",
+      "date": "18 juil",
+      "team1": {
+        "name": "P101",
+        "flag": "❓"
+      },
+      "team2": {
+        "name": "P102",
+        "flag": "❓"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null
+    }
+  }
+};
