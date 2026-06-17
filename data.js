@@ -285,17 +285,22 @@ const DATA = {
 
   // ── FOCUS FRANCE — STATS GLOBALES ─────────────────────────
   franceFocus: {
-    formation: "4-3-3",
+    formation: "4-2-3-1",
     coach: "Didier Deschamps",
-    fifaRank: 3,
+    fifaRank: 1,
     // Joueurs clés avec stats — mettre à jour après chaque match
     keyPlayers: [
-      { name: "Kylian Mbappé",      flag: "⚽", position: "ATT", goals: 2, assists: 0, note: "Capitaine, meilleur buteur de l'histoire des Bleus (58 buts). Doublé contre le Sénégal dont une frappe de 25m en toute fin de match. Record historique." },
-      { name: "Antoine Griezmann",   flag: "🎯", position: "MIL", goals: 0, assists: 0, note: "Créateur principal, passeur décisif, âme de l'équipe." },
-      { name: "Bradley Barcola",     flag: "⚡", position: "ATT", goals: 1, assists: 0, note: "Remplaçant entré à la 80e à la place de Dembélé, buteur dès sa première action (82e). Montée en puissance remarquée." },
-      { name: "Aurélien Tchouaméni", flag: "🛡️", position: "MIL", goals: 0, assists: 0, note: "Récupérateur, relanceur, pilier défensif du milieu." },
-      { name: "N. Upamecano",        flag: "🧱", position: "DEF", goals: 0, assists: 0, note: "Défenseur central, puissant dans les duels aériens." },
-      { name: "Mike Maignan",        flag: "🧤", position: "GK",  goals: 0, assists: 0, note: "Gardien titulaire, réflexes et relances au pied." },
+      { name: "Kylian Mbappé",       flag: "⚽", position: "ATT", goals: 2, assists: 0, note: "Capitaine, meilleur buteur de l'histoire des Bleus (58 buts). Doublé contre le Sénégal dont une frappe de 25m en toute fin. Record historique absolu." },
+      { name: "Ousmane Dembélé",     flag: "🌀", position: "ATT", goals: 0, assists: 0, note: "Lauréat du prix The Best FIFA 2025. Ailier titulaire en pointe gauche, dribbleur dévastateur, remplacé à la 80e contre le Sénégal." },
+      { name: "Michael Olise",       flag: "🎯", position: "MIL", goals: 0, assists: 2, note: "2 passes décisives contre le Sénégal (assists des deux buts de Mbappé). Phénomène technique, tête de gondole du nouveau visage des Bleus." },
+      { name: "Désiré Doué",         flag: "🌟", position: "MIL", goals: 0, assists: 0, note: "Prodige du PSG, Meilleur jeune de la Coupe du monde des Clubs 2025. Titulaire dans le 4-2-3-1, créativité et impact décisif attendus." },
+      { name: "Aurélien Tchouaméni", flag: "🛡️", position: "MIL", goals: 0, assists: 0, note: "Double pivot avec Rabiot, récupérateur et relanceur, pilier défensif du milieu. Indispensable à l'équilibre de l'équipe." },
+      { name: "Adrien Rabiot",       flag: "💪", position: "MIL", goals: 0, assists: 1, note: "Double pivot, 1 passe décisive contre le Sénégal (assist Barcola). Box-to-box complet, expérience de deux finales mondiales." },
+      { name: "William Saliba",      flag: "🧱", position: "DEF", goals: 0, assists: 0, note: "Défenseur central titulaire, l'un des meilleurs au monde à 25 ans. Taille, vitesse et relance propre." },
+      { name: "Dayot Upamecano",     flag: "🏋️", position: "DEF", goals: 0, assists: 0, note: "Défenseur central, puissant dans les duels aériens, associé à Saliba en charnière." },
+      { name: "Theo Hernández",      flag: "🏃", position: "DEF", goals: 0, assists: 0, note: "Latéral gauche offensif, débordements et centres, l'un des meilleurs à son poste au monde." },
+      { name: "Bradley Barcola",     flag: "⚡", position: "ATT", goals: 1, assists: 0, note: "Entré à la 80e contre le Sénégal, buteur dès sa première action (82e). Super-sub de luxe, rapidité dévastatrice." },
+      { name: "Mike Maignan",        flag: "🧤", position: "GK",  goals: 0, assists: 0, note: "Gardien titulaire, sauveur sur le poteau de Jackson (25e) contre le Sénégal. Relanceur au pied, réflexes au top." },
     ],
     // Buteurs France (mis à jour après chaque match)
     scorers: [
@@ -312,7 +317,7 @@ const DATA = {
       goalsConceded: 1,
     },
     // Analyse générale des Bleus dans ce tournoi
-    globalAnalysis: "Entrée en lice réussie mais perfectible. Les Bleus ont souffert en 1re période face à un Sénégal organisé et intense, frôlant la catastrophe sur un poteau de Jackson (25e). La 2e période a vu une France plus dominante : Mbappé a débloqué (66e) puis signé un doublé record en toute fin (90e+6), 58 buts en Bleu — meilleur buteur de l'histoire devant Giroud. Barcola a confirmé sa montée en puissance (82e). Point de vigilance : 6e match sans clean sheet, la défense reste perméable. Prochain rendez-vous contre l'Irak le 22 juin — une victoire large assure la qualification.",
+    globalAnalysis: "Entrée en lice réussie mais perfectible. Les Bleus ont souffert en 1re période face à un Sénégal organisé et intense, frôlant la catastrophe sur un poteau de Jackson (25e). La 2e période a vu une France plus dominante dans son 4-2-3-1 : Mbappé a débloqué (66e, assist Olise), Barcola super-sub a doublé (82e, assist Rabiot), puis Mbappé a scellé le score d'une frappe de 25m (90e+6, assist Olise). 🏆 Record : 58 buts pour Mbappé, seul meilleur buteur de l'histoire des Bleus. Point noir : 6e match consécutif sans clean sheet. Prochain match contre l'Irak le 22 juin — qualification quasi-assurée en cas de victoire.",
   },
 
   // ── BRACKET PHASE FINALE (GÉNÉRAL) ────────────────────────
