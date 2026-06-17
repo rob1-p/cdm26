@@ -8,7 +8,7 @@ const DATA = {
 
   // ── META ──────────────────────────────────────────────────
   meta: {
-    lastUpdate: "16 juin 2026 – 20h30",
+    lastUpdate: "17 juin 2026 – 09h00 · Après France 3-1 Sénégal",
     currentPhase: "groupes", // "groupes" | "16" | "8" | "quarts" | "demies" | "finale"
     focusTeam: "France",
   },
@@ -84,9 +84,9 @@ const DATA = {
     I: {
       // ← GROUPE FRANCE — Mise à jour prioritaire après chaque match
       teams: [
-        { name: "France",   flag: "🇫🇷", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+        { name: "France",   flag: "🇫🇷", pts:3, j:1, g:1, n:0, d:0, bp:3, bc:1, qualified: null },
         { name: "Norvège",  flag: "🇳🇴", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
-        { name: "Sénégal",  flag: "🇸🇳", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
+        { name: "Sénégal",  flag: "🇸🇳", pts:0, j:1, g:0, n:0, d:1, bp:1, bc:3, qualified: null },
         { name: "Irak",     flag: "🇮🇶", pts:0, j:0, g:0, n:0, d:0, bp:0, bc:0, qualified: null },
       ]
     },
@@ -122,7 +122,7 @@ const DATA = {
   francMatches: [
     {
       id: "I-J1",
-      status: "upcoming", // ← changer en "live" pendant le match, "done" après
+      status: "done",
       date: "16 juin 2026",
       time: "21h00",
       venue: "MetLife Stadium",
@@ -130,10 +130,16 @@ const DATA = {
       round: "Poule I – J1",
       home: { name: "France", flag: "🇫🇷" },
       away: { name: "Sénégal", flag: "🇸🇳" },
-      score: { home: null, away: null }, // ← remplir après le match: { home: 2, away: 1 }
+      score: { home: 3, away: 1 },
       scorers: {
-        home: [], // ← ex: [{ name: "Mbappé", min: 23, type: "goal" }, { name: "Giroud", min: 67, type: "penalty" }]
-        away: []
+        home: [
+          { name: "Mbappé", min: 66, type: "goal" },
+          { name: "Barcola", min: 82, type: "goal" },
+          { name: "Mbappé", min: 90+6, type: "goal" },
+        ],
+        away: [
+          { name: "I. Mbaye", min: 90+5, type: "goal" },
+        ]
       },
       analysis: {
         preview: "Premier match de poule face au Sénégal, équipe africaine la plus dangereuse du tournoi. Les Lions disposent de Sadio Mané en fin de carrière mais toujours influent, et d'une défense organisée (Koulibaly). La France est favorite à 66% mais le Sénégal a l'habitude des surprises : ils avaient battu les Bleus 1-0 en 2002. Deschamps devrait aligner un 4-3-3 avec Mbappé pointe, Dembelé et Griezmann sur les ailes. L'enjeu : ne pas concéder sur coup de pied arrêté (Koulibaly, 1m90).",
@@ -144,7 +150,7 @@ const DATA = {
           { label: "Buts marqués (qualifs)", home: "28", away: "21" },
           { label: "Buteur clé", home: "Mbappé (12 buts)", away: "Mané (8 buts)" },
         ],
-        postMatch: null, // ← remplir après: "Victoire solide des Bleus portés par un Mbappé décisif..."
+        postMatch: "Victoire 3-1 des Bleus, laborieuse en première période mais maîtrisée en seconde. La France a souffert et a frôlé le désastre sur un poteau de Nicolas Jackson (25e) sauvé par Maignan. Mbappé a débloqué la situation à la 66e sur assist d'Olise, puis Barcola a doublé la mise (82e, assist Rabiot). Le Sénégal a réduit le score en toute fin (90e+5, Mbaye) avant que Mbappé ne scelle le score d'une frappe de 25 mètres (90e+6). 🏆 Record historique : avec ce doublé, Kylian Mbappé devient à 58 buts le meilleur buteur de l'histoire de l'équipe de France, dépassant Olivier Giroud. Point noir : 6e match consécutif sans clean sheet.",
       }
     },
     {
@@ -284,28 +290,29 @@ const DATA = {
     fifaRank: 3,
     // Joueurs clés avec stats — mettre à jour après chaque match
     keyPlayers: [
-      { name: "Kylian Mbappé",      flag: "⚽", position: "ATT", goals: 0, assists: 0, note: "Capitaine, meilleur joueur du monde. Décisif en grandes occasions." },
+      { name: "Kylian Mbappé",      flag: "⚽", position: "ATT", goals: 2, assists: 0, note: "Capitaine, meilleur buteur de l'histoire des Bleus (58 buts). Doublé contre le Sénégal dont une frappe de 25m en toute fin de match. Record historique." },
       { name: "Antoine Griezmann",   flag: "🎯", position: "MIL", goals: 0, assists: 0, note: "Créateur principal, passeur décisif, âme de l'équipe." },
-      { name: "Ousmane Dembélé",     flag: "⚡", position: "ATT", goals: 0, assists: 0, note: "Ailier dévastateur, explosivité et dribbles dans les petits espaces." },
+      { name: "Bradley Barcola",     flag: "⚡", position: "ATT", goals: 1, assists: 0, note: "Remplaçant entré à la 80e à la place de Dembélé, buteur dès sa première action (82e). Montée en puissance remarquée." },
       { name: "Aurélien Tchouaméni", flag: "🛡️", position: "MIL", goals: 0, assists: 0, note: "Récupérateur, relanceur, pilier défensif du milieu." },
       { name: "N. Upamecano",        flag: "🧱", position: "DEF", goals: 0, assists: 0, note: "Défenseur central, puissant dans les duels aériens." },
       { name: "Mike Maignan",        flag: "🧤", position: "GK",  goals: 0, assists: 0, note: "Gardien titulaire, réflexes et relances au pied." },
     ],
     // Buteurs France (mis à jour après chaque match)
     scorers: [
-      // ex: { name: "Mbappé", goals: 2, penalties: 1 }
+      { name: "Kylian Mbappé", goals: 2, penalties: 0 },
+      { name: "Bradley Barcola", goals: 1, penalties: 0 },
     ],
     // Résumé de tournoi
     tournamentStats: {
-      matchesPlayed: 0,
-      wins: 0,
+      matchesPlayed: 1,
+      wins: 1,
       draws: 0,
       losses: 0,
-      goalsScored: 0,
-      goalsConceded: 0,
+      goalsScored: 3,
+      goalsConceded: 1,
     },
     // Analyse générale des Bleus dans ce tournoi
-    globalAnalysis: "La France aborde ce Mondial comme l'un des quatre grands favoris avec l'Espagne, l'Argentine et le Brésil. Classée 3e nation mondiale par la FIFA, elle dispose d'un effectif générationnel : Mbappé (27 ans) est au sommet de son art, Griezmann apporte l'expérience de deux finales mondiales. Le groupe I est coriace (Norvège de Haaland, Sénégal) mais la France a la qualité pour finir 1re et bénéficier du bracket le plus favorable vers la finale.",
+    globalAnalysis: "Entrée en lice réussie mais perfectible. Les Bleus ont souffert en 1re période face à un Sénégal organisé et intense, frôlant la catastrophe sur un poteau de Jackson (25e). La 2e période a vu une France plus dominante : Mbappé a débloqué (66e) puis signé un doublé record en toute fin (90e+6), 58 buts en Bleu — meilleur buteur de l'histoire devant Giroud. Barcola a confirmé sa montée en puissance (82e). Point de vigilance : 6e match sans clean sheet, la défense reste perméable. Prochain rendez-vous contre l'Irak le 22 juin — une victoire large assure la qualification.",
   },
 
   // ── BRACKET PHASE FINALE (GÉNÉRAL) ────────────────────────
